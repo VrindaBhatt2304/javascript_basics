@@ -20,3 +20,11 @@ console.log(typeof age);
 console.log(typeof null)
 console.log(typeof name)
 
+let score=undefined;
+console.log(typeof(score));
+
+let valueInNumber=Number(score);
+console.log(valueInNumber);
+
+//"33aabc"/undefined => NaN not a number
+//null => 0
