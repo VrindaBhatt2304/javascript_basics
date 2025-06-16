@@ -3,7 +3,7 @@
 
 console.log(3+3);
 
-let name="vrinda"
+//let name="vrinda"
 let age=23
 let isLoggedIn=false
 
@@ -18,7 +18,7 @@ let isLoggedIn=false
 
 console.log(typeof age);
 console.log(typeof null)
-console.log(typeof name)
+//console.log(typeof name)
 
 let score=undefined;
 console.log(typeof(score));
@@ -40,3 +40,12 @@ console.log(id===anotherId);
 const bignum=34567893863875844n
 console.log(typeof(bignum));
 
+const name="vrinda-bhatt";
+const newName=new String('VRINDABHATT');
+console.log(name);
+console.log(newName);
+console.log(name.length);
+console.log(name.toUpperCase());
+console.log(name.charAt(2));
+
+console.log(name.split('-'))
