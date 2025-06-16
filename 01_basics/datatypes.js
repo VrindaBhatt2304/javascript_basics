@@ -28,3 +28,15 @@ console.log(valueInNumber);
 
 //"33aabc"/undefined => NaN not a number
 //null => 0
+
+//primitve: sstring,number,bool,null,undefined,smbol,bigint
+//reference(non-primitive)
+//array,objects,functions
+const id=Symbol('123');
+const anotherId=Symbol('123');
+
+console.log(id===anotherId);
+
+const bignum=34567893863875844n
+console.log(typeof(bignum));
+
