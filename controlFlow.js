@@ -76,8 +76,24 @@ const myobj={
     cpp:'c++',
     rb:'ruby'
 }
-for (const key in myobj) {
-    console.log(key);
-    console.log(myobj[key]);
-}
+//for (const key in myobj) {
+//    console.log(key);
+//    console.log(myobj[key]);
+//}
+
+const codes=["js", "cpp", "ruby","python", "java"];
+//codes.forEach( function (item){
+//    console.log(item);
+//})
+//codes.forEach((item)=>{
+//    console.log(item);
+//})
+
+//function printing(item)
+//{console.log(item);}
+//codes.forEach(printing);
+
+codes.forEach((item,index,arr)=>{
+    console.log(item,index,arr);
+})
 
