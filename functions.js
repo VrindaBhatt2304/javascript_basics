@@ -52,3 +52,19 @@ function handleobject(anyobj)
 }
 
 //handleobject(user);we can also directly pass the object instead of first creating import {  } from "module";
+
+
+function one()
+{
+    const username="vrinda"
+
+    function two()
+    {
+        const website="youtube"
+        console.log(username);
+        console.log(website);
+    }
+    //console.log(website);
+    two()
+}
+one();
