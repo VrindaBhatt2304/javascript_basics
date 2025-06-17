@@ -13,14 +13,30 @@
     </ul>
 </body>
 <script>
-    function addlang(lang)
-    {
+    function addlang(lang){
         const li=document.createElement('li');
-        li.innerHTML=`${lang}`;
-        document.querySelector('.language');
-        appendChild(li);
+        li.innerHTML = `${lang}`
+        document.querySelector('.language').appendChild(li)
     }
     addlang("python");
-    addlang("typescript");
+
+    function addoptlang(lang){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(lang));
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptlang("typescript");
+
+    //edit
+    const secondlang=document.querySelector("li:nth-child(2)")
+    secondlang.innerHTML="mojo";
+
+    const newli=document.createElement('li');
+    newli.textContent = "cpp";
+    secondlang.replaceWith(newli);
+
+    //remove
+    const lastlang=document.querySelector('li:last-child');
+    lastlang.remove();
 </script>
 </html>
