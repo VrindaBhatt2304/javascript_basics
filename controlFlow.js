@@ -69,3 +69,15 @@ for (const [key,value] of map) {
     console.log(key,':-',value);
 }
 
+
+//for in loop
+const myobj={
+    js:'javascript',
+    cpp:'c++',
+    rb:'ruby'
+}
+for (const key in myobj) {
+    console.log(key);
+    console.log(myobj[key]);
+}
+
