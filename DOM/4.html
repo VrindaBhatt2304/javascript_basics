@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last session </title>
+</head>
+<body style="background-color: black;color:aquamarine">
+    <ul class="language">
+        <li>javascript</li>
+        <li>c++</li>
+        <li>java</li>
+    </ul>
+</body>
+<script>
+    function addlang(lang)
+    {
+        const li=document.createElement('li');
+        li.innerHTML=`${lang}`;
+        document.querySelector('.language');
+        appendChild(li);
+    }
+    addlang("python");
+    addlang("typescript");
+</script>
+</html>
