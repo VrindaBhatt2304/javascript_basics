@@ -4,24 +4,28 @@ const body=document.querySelector("body");
 
 buttons.forEach(function (button){
     console.log(button);
-    button.addEventListener('click',function(e){
-        console.log(e);
-        console.log(e.target);
-        switch(e.target){
+    button.addEventListener('click',function(eve)
+    {
+        console.log(eve);
+        console.log(eve.target);
+        switch(eve.target.id)
+        {
             case 'grey':
-                body.style.backgroundColor=e.target.id;
+                body.style.backgroundColor=eve.target.id;
                 break;
             case 'white':
-                body.style.backgroundColor=e.target.id;
+                body.style.backgroundColor=eve.target.id;
                 break;
             case 'blue':
-                body.style.backgroundColor=e.target.id;
+                body.style.backgroundColor=eve.target.id;
                 break;
             case 'yellow':
-                body.style.backgroundColor=e.target.id;
+                body.style.backgroundColor=eve.target.id;
                 break;
+            case 'purple':
+                body.style.backgroundColor=eve.target.id;
             default:
-                
+                break;
         }
     })
 });
